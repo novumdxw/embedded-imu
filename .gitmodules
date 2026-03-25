@@ -1,0 +1,24 @@
+[submodule "02.firmware/third_party/nodemcu-firmware"]
+	path = 02.firmware/third_party/nodemcu-firmware
+	url = https://github.com/nodemcu/nodemcu-firmware.git
+[submodule "04.reference/nodemcu-devkit-v1.0"]
+	path = 04.reference/nodemcu-devkit-v1.0
+	url = https://github.com/nodemcu/nodemcu-devkit-v1.0.git
+[submodule "04.reference/Pixhawk-Standards"]
+	path = 04.reference/Pixhawk-Standards
+	url = https://github.com/pixhawk/Pixhawk-Standards.git
+[submodule "04.reference/PX4-Hardware"]
+	path = 04.reference/PX4-Hardware
+	url = https://github.com/pixhawk/Hardware.git
+[submodule "02.firmware/third_party/nodeMCU-emmylua"]
+	path = 02.firmware/third_party/nodeMCU-emmylua
+	url = https://github.com/serg3295/nodeMCU-emmylua.git
+[submodule "04.reference/PX4-Autopilot"]
+	path = 04.reference/PX4-Autopilot
+	url = https://github.com/PX4/PX4-Autopilot.git
+[submodule "04.reference/pulseview"]
+	path = 04.reference/pulseview
+	url = git://sigrok.org/pulseview.git
+[submodule "04.reference/PlotJuggler"]
+	path = 04.reference/PlotJuggler
+	url = https://github.com/facontidavide/PlotJuggler.git

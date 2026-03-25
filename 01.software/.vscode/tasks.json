@@ -1,0 +1,66 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Qt New File...",
+            "type": "shell",
+            "command": "pyside6-designer",
+            "options": {
+                "env": {
+                    "PATH": "${workspaceFolder}/.venv/bin:${env:PATH}"
+                }
+            },
+            "group": "none",
+            "hide": true
+        },
+        {
+            "label": "Qt Open File...",
+            "type": "process",
+            "command": "pyside6-designer",
+            "args": [ "${file}" ],
+            "options": {
+                "env": {
+                    "PATH": "${workspaceFolder}/.venv/bin:${env:PATH}"
+                }
+            },
+            "group": "none",
+            "hide": true
+        },
+        {
+            "label": "Qt Generating a .py file from a .ui file",
+            "type": "process",
+            "command": "pyside6-uic",
+            "args": [ "${file}", "-o", "ui_${fileBasenameNoExtension}.py" ],
+            "options": {
+                "env": {
+                    "PATH": "${workspaceFolder}/.venv/bin:${env:PATH}"
+                }
+            },
+            "group": "none",
+            "presentation": {
+                "reveal": "silent",
+                "panel": "shared"
+            },
+            "hide": true
+        },
+        {
+            "label": "Qt Generating a .py file from a .qrc file",
+            "type": "process",
+            "command": "pyside6-rcc",
+            "args": [ "${file}", "-o", "rc_${fileBasenameNoExtension}.py" ],
+            "options": {
+                "env": {
+                    "PATH": "${workspaceFolder}/.venv/bin:${env:PATH}"
+                }
+            },
+            "group": "none",
+            "presentation": {
+                "reveal": "silent",
+                "panel": "shared"
+            },
+            "hide": true
+        }
+    ]
+}

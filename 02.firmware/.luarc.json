@@ -1,0 +1,3 @@
+{
+    "workspace.library": ["${workspaceFolder}/third_party/nodeMCU-emmylua/esp8266"]
+}

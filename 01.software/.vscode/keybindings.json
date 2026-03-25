@@ -1,0 +1,26 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+alt+k ctrl+n",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Qt New File..."
+    },
+    {
+        "key": "ctrl+alt+k ctrl+o",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Qt Open File...",
+        "when": "resourceExtname == .ui || resourceExtname == .qrc"
+    },
+    {
+        "key": "ctrl+alt+k ctrl+t",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Qt Generating a .py file from a .ui file",
+        "when": "resourceExtname == .ui"
+    },
+    {
+        "key": "ctrl+alt+k ctrl+t",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Qt Generating a .py file from a .qrc file",
+        "when": "resourceExtname == .qrc"
+    }
+]
